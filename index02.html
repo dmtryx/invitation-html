@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "RoobertENEL-Black";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Black.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Black.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Black.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Black.woff")
+            format("woff");
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-Light";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Light.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Light.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Light.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Light.woff")
+            format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-LightItalic";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-LightItalic.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-LightItalic.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-LightItalic.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-LightItalic.woff")
+            format("woff");
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-Bold";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Bold.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Bold.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Bold.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Bold.woff")
+            format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-BoldItalic";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BoldItalic.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BoldItalic.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BoldItalic.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BoldItalic.woff")
+            format("woff");
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-BlackItalic";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BlackItalic.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BlackItalic.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BlackItalic.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-BlackItalic.woff")
+            format("woff");
+        font-weight: 900;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-RegularItalic";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-RegularItalic.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-RegularItalic.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-RegularItalic.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-RegularItalic.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "RoobertENEL-Regular";
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Regular.eot");
+        src: url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Regular.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Regular.woff2")
+            format("woff2"),
+          url("https://assets.enelcol.com.co/2020/landings/20201214_Landing_Piloto-prepago/newfonts/RoobertENEL-Regular.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        outline: none;
+        list-style: none;
+        font-family: RoobertENEL-Regular, sans-serif;
+        -webkit-text-size-adjust: none;
+        color: white;
+      }
+
+      body {
+        margin: 0px !important;
+        padding: 0px !important;
+        -webkit-text-size-adjust: 100% !important;
+        -ms-text-size-adjust: 100% !important;
+        -webkit-font-smoothing: antialiased !important;
+        display: flex;
+        justify-content: center;
+        background-color: #f6f6f6;
+      }
+
+      .front-section {
+        background-color: #002250;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .front-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .front-section .container-logo {
+        height: 70px;
+        width: 100px;
+      }
+      .front-section .title-front-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3rem;
+        padding-top: 3rem;
+      }
+
+      .associate-section {
+        background-color: white;
+        height: 350px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 10px;
+
+      }
+
+      .invoice-section {
+        position: relative;
+        background-color: #e2e2e2;
+        height: 350px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: -10px;
+        z-index: 1;
+
+      }
+
+      .background-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Menor valor, estará al fondo */
+      }
+
+      .foreground-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        height: 100%; /* Color de fondo con transparencia para ver el div de fondo */
+        z-index: 2; /* Mayor valor, estará encima */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .historical-section {
+        z-index: 3;
+        position: absolute;
+        background-color: #83ac07;
+        height: 350px;
+        width: 600px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+        margin-top: -10px;
+      }
+      .pqr-section {
+        background-image: url(https://i.postimg.cc/HsDsJx9j/background-pqr.jpg);
+        margin-top: 330px;
+        height: 300px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      
+      .header-section {
+        position: relative;
+        height: 442px;
+        width: 600px;
+      }
+
+      .header-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        z-index: 1; /* Este estará encima */
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0; /* Este estará encima */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 600px; background-color: whitesmoke">
+      <div class="header-section">
+        <div class="header-content">
+          <h1>
+            Asocia tu cuenta de energía para que disfrutes de nuestros
+            beneficios web
+          </h1>
+          <a
+            style="text-decoration: none"
+            href="https://sie.eebpsa.com.co:3333/"
+          >
+            <div
+              style="
+                background-color: #83ac07;
+                height: 3rem;
+                width: 10rem;
+                margin-top: 1rem;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+                font-size: large;
+              "
+            >
+              Haz click aquí
+            </div>
+          </a>
+        </div>
+        <div class="header-image">
+          <img src="https://i.postimg.cc/9FSXMQ52/front-copia.png" alt="" draggable="false" />
+        </div>
+      </div>
+      <div class="associate-section">
+        <img
+          style="
+            width: 250px;
+            height: max-content;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          "
+          src="https://i.postimg.cc/1XzTDD6d/form.png"
+          alt="img-asociar"
+        />
+        <div
+          style="
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          "
+        >
+          <h2 style="color: #002250">ASOCIA TU FACTURA</h2>
+          <p style="color: rgb(49, 49, 49)">
+            Asocia tu factura de energía con el número de inscripción en
+            sencillos pasos, este numero lo podrás encontrar en la parte
+            superior de tu factura.
+          </p>
+          <img
+            src="https://i.postimg.cc/xC0P5nQ2/factura-zom.png"
+            alt="img factura"
+            style="width: 100%; height: max-content"
+          />
+        </div>
+      </div>
+      <div class="invoice-section">
+        <div>
+          <div class="background-div">
+            <img
+              src="https://i.postimg.cc/tCSCC5Jt/fondo3.png"
+              style="width: 100%; height: max-content"
+              alt="fondo factura"
+            />
+          </div>
+          <div class="foreground-div">
+            <div
+              style="
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+              "
+            >
+              <h2 style="color: rgb(226, 225, 225)">
+                SEGUIMIENTO Y PAGO ONLINE DE TUS FACTUAS
+              </h2>
+              <img
+                src="https://i.postimg.cc/02ghGK3R/table-invoices.png"
+                alt="tabla seguimiento"
+                style="
+                  width: 100%;
+                  height: max-content;
+                  border-radius: 10px;
+                  box-shadow: 0px 4px 4px 0px #00000040;
+                "
+              />
+            </div>
+            <div>
+              <img
+                src="https://i.postimg.cc/mgK9hRkw/form-invoices.png"
+                alt="tabla seguimiento"
+                style="
+                  width: 200px;
+                  height: max-content;
+                  border-radius: 10px;
+                  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div style="background-color: red">
+          <h2>Historial de consumo</h2>
+          <div>
+            <img src="" alt="grafica de consumo" />
+          </div>
+          <p>
+            Con esta herramienta puedes visualizar el uso energético a lo largo
+            del tiempo mediante gráficos y datos detallados. Facilitando la
+            identificación de patrones de consumo, ayudando a optimizar la
+            eficiencia energética y reducir costos.
+          </p>
+        </div>
+      </div>
+      <div class="historical-section">
+        <h2 style="color: white; width: 100%; text-align: center">
+          HISTORIAL DE TUS FACTURAS
+        </h2>
+        <div
+          style="display: flex; justify-content: space-between; padding: 0 2rem"
+        >
+          <img
+            src="https://i.postimg.cc/1zdX6rLg/historical-image.png"
+            alt="fondo pqr"
+            style="
+              width: 250px;
+              height: max-content;
+              border-radius: 10px;
+              box-shadow: 0px 4px 4px 0px #00000040;
+            "
+          />
+          <div style="width: 250px">
+            <p style="text-align: justify">
+              Con esta herramienta puedes visualizar el uso energético a lo
+              largo del tiempo mediante gráficos y datos detallados.
+            </p>
+            <br />
+            <p style="text-align: justify">
+              Facilitando la identificación de patrones de consumo, ayudando a
+              optimizar la eficiencia energética y reducir costos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pqr-section">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+          "
+        >
+          <div>
+            <h2>INTERFAZ</h2>
+            <h2>PQR'S</h2>
+          </div>
+
+          <img
+            src="https://i.postimg.cc/t4xX1nhk/table-pqr.png"
+            alt="tabla pqr"
+            style="width: 400px;border-radius: 5px;"
+          />
+        </div>
+        <p style="padding: 0 2rem; text-align: justify">
+          Puedes ver el progreso, recibir actualizaciones y obtener respuestas a
+          sus inquietudes. Esta herramienta mejora la transparencia y eficiencia
+          en la gestión de solicitudes, asegurando una atención oportuna y
+          efectiva.
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <!--
+    1. primera sección debe llevar mensaje de asociación
+    2. url -> https://sie.eebpsa.com.co:3333/auth/login landing page
+
+  -->
+</html>
